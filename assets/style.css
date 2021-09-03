@@ -1,0 +1,151 @@
+.attribution {
+    font-size : 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    max-height: 100vh;
+    background-color: #E0E8FF;
+}
+
+strong{
+    color: #1F2F56;
+}
+
+
+main{
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 10vh;
+    height: 100vh;
+}
+
+.principal{
+    background-color: #FFF;
+    height: 650px;
+    width: 400px;
+    border-radius: 16px;
+    margin: auto;
+}
+
+.cabecalho{
+    background-image: url(/images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    border-radius: 16px 16px 0px 0px;
+    margin-bottom: 2rem;
+}
+
+.container{
+    color: #7280A7;
+    padding: 0px 1rem;
+}
+
+.info{
+    text-align: center;
+    padding: 0px 1rem;
+}
+
+.info > h1 {
+    margin-bottom: 1rem;
+}
+
+.plano{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F7FF;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 16px;
+    margin: 2rem 1.5rem;
+}
+
+.plano-info{
+    display: flex;
+    align-items: center;
+}
+
+.plano-info >figure{
+    margin-right: 1rem;
+}
+
+.plano a:hover{
+    text-decoration: none;
+    color: #7280A7;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    }
+
+.botoes > button{
+    background-color: #3829E0;
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 900;
+    border: none;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.botoes > button:hover{
+    background-color: #7280A7;
+    cursor: pointer;
+}
+
+.botoes > button:active{
+    transform: translateY(-1px);
+}
+
+.botoes > a{
+    text-decoration: none;
+    color: #7280A7;
+}
+
+.botoes > a:hover{
+    color: #1F2F56;
+}
+
+
+@media(max-width:768px){
+    main{
+        background-image: url(/images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100vh;
+    }
+
+    .principal{
+        background-color: white;
+        width: 350px;
+        border-radius: 16px;
+        margin: auto;
+    }
+
+    .plano{
+        margin: 2rem 1rem;
+    }
+
+    .botoes{
+        margin: 0rem 1rem;
+    }
+
+}
